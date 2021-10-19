@@ -23,7 +23,7 @@
 .dcl.mana .matic {
   width: 1em;
   height: 1em;
-  background-image: url(../../assets/mana-l2.svg);
+  background-image: url(../../assets/lom-l2.svg);
   display: inline-block;
   background-size: contain;
   filter: var(--brightness);

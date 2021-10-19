@@ -1,0 +1,142 @@
+/* Normal */
+
+.dcl.field {
+  min-width: 400px;
+  position: relative;
+}
+
+.dcl.field .ui.input {
+  width: 100%;
+}
+
+.dcl.field .ui.input input,
+.ui.form .dcl.field .ui.input input {
+  padding: 0px;
+  padding-bottom: 12px;
+  padding-top: 4px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid var(--divider);
+  border-radius: 0px;
+  color: var(--text);
+  background: transparent;
+}
+
+.dcl.field .ui.input input:focus,
+.dcl.field .ui.input input:active,
+.ui.form .dcl.field .ui.input input:focus,
+.ui.form .dcl.field .ui.input input:active {
+  border-bottom: 2px solid var(--text);
+}
+
+.dcl.field .message,
+.ui.form .dcl.field .message {
+  margin-top: 8px;
+  color: var(--secondary-text);
+  font-size: 15px;
+}
+
+/* Loading */
+
+.dcl.field .ui.input.loading > i.icon,
+.ui.form .dcl.field .ui.input.loading > i.icon {
+  opacity: 1;
+  height: 36px;
+}
+.dcl.field .ui.input.loading > i.icon:before,
+.ui.form .dcl.field .ui.input.loading > i.icon:before {
+  border-color: var(--divider);
+  border-width: 2px;
+}
+.dcl.field .ui.input.loading > i.icon:after,
+.ui.form .dcl.field .ui.input.loading > i.icon:after {
+  border-color: var(--primary) transparent transparent;
+  border-width: 2px;
+}
+
+/* Disabled */
+
+.dcl.field.disabled .ui.header.sub,
+.dcl.field.disabled .ui.input,
+.ui.form .dcl.field.disabled .ui.header.sub,
+.ui.form .dcl.field.disabled .ui.input {
+  opacity: 0.5;
+}
+
+.dcl.field.disabled .ui.input,
+.ui.form .dcl.field.disabled .ui.input {
+  opacity: 0.5;
+}
+
+/* Error */
+
+.dcl.field.error .ui.input input,
+.ui.form .dcl.field.error .ui.input input {
+  border-bottom: 2px solid var(--error);
+}
+
+.dcl.field.error .message,
+.ui.form .dcl.field.error .message {
+  color: var(--error);
+}
+
+.dcl.field.error .ui.header.sub,
+.ui.form .dcl.field.error .ui.header.sub {
+  color: var(--error);
+}
+
+.dcl.field.error .ui.input > i.icon,
+.ui.form .dcl.field.error .ui.input > i.icon {
+  opacity: 1;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cpath fill='%23ff0000' d='M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-16a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V7a1 1 0 0 1 1-1zm0 10a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 36px;
+}
+.dcl.field.error .ui.input > i.icon:before,
+.ui.form .dcl.field.error .ui.input > i.icon:before {
+  content: '';
+  display: none;
+}
+
+/* Address */
+
+.dcl.field.address .ui.input input,
+.ui.form .dcl.field.address .ui.input input {
+  padding-right: 2.67142857em !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dcl.field.address .dcl.blockie,
+.ui.form .dcl.field.address .dcl.blockie {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+
+.dcl.field.address.has-label .dcl.blockie,
+.ui.form .dcl.field.address.has-label .dcl.blockie {
+  top: 28px;
+}
+
+.dcl.field .overlay,
+.ui.form .dcl.field .overlay {
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
+}
+
+.dcl.field .overlay .ui.button,
+.ui.form .dcl.field .overlay .ui.button {
+  height: 44px;
+}
+
+/* Icon */
+
+.dcl.field .ui.input .icon,
+.ui.form .dcl.field .ui.input .icon {
+  color: var(--text);
+}

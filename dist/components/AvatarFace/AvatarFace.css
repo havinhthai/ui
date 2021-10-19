@@ -1,0 +1,57 @@
+.dcl.avatar-face {
+  border-radius: 100%;
+  background-color: rgba(var(--bluish-steel-raw), 0.4);
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+.dcl.avatar-face.responsive {
+  width: 93px;
+  height: 93px;
+}
+
+@media (min-width: 1200px) {
+  .dcl.avatar-face.responsive {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.dcl.avatar-face.large {
+  width: 108px;
+  height: 108px;
+}
+
+.dcl.avatar-face.medium {
+  width: 48px;
+  height: 48px;
+}
+
+.dcl.avatar-face.small {
+  width: 32px;
+  height: 32px;
+}
+
+.dcl.avatar-face.tiny {
+  width: 20px;
+  height: 20px;
+}
+
+.dcl.avatar-face.inline {
+  vertical-align: -25%;
+}
+
+.dcl.avatar-face img {
+  width: 100%;
+}
+
+.dcl.avatar-face .guest-face {
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='%23CACACA' fill-rule='evenodd'%3E%3Cpath d='M74.4709448%2C86.6170316 L14.4881614%2C86.9004718 C14.1674618%2C85.1296375 14%2C83.305488 14%2C81.4422415 C14%2C64.6294557 27.6349807%2C51 44.4545817%2C51 C61.2741827%2C51 74.9091633%2C64.6294557 74.9091633%2C81.4422415 C74.9091633%2C83.2062358 74.7590672%2C84.9351875 74.4709448%2C86.6170316 Z'/%3E%3Cellipse cx='44.186' cy='28.177' rx='21.186' ry='21.177'/%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-size: contain;
+}

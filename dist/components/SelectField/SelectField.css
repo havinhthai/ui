@@ -1,0 +1,126 @@
+.dcl.select-field {
+  min-width: 400px;
+}
+
+.dcl.select-field .ui.dropdown {
+  background: transparent;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 2px solid var(--divider);
+  padding: 2px 0px 12px 0px;
+  width: 100%;
+  margin-top: 8px;
+  min-height: 40px;
+}
+
+.dcl.select-field .ui.search.dropdown > input.search {
+  padding: 0px 0px 10px 0px;
+}
+
+.dcl.select-field .ui.dropdown > .text,
+.dcl.select-field .ui.dropdown > .default.text,
+.dcl.select-field .ui.dropdown > .text:not(.default),
+.dcl.select-field .ui.search.dropdown > input.search {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  line-height: 18px;
+}
+
+.dcl.select-field .ui.dropdown > .default.text {
+  opacity: 0.6;
+}
+
+.dcl.select-field .ui.selection.active.dropdown,
+.dcl.select-field .ui.selection.active.dropdown:hover {
+  border-bottom: 2px solid var(--text);
+}
+
+.dcl.select-field .ui.dropdown .dropdown.icon {
+  padding-right: 0px;
+  padding-top: 4px;
+  color: var(--text);
+}
+
+.dcl.select-field .ui.dropdown .text,
+.dcl.select-field .ui.dropdown .default.text {
+  color: var(--text);
+}
+
+.dcl.select-field .ui.dropdown .menu {
+  padding: 0px;
+  margin-top: 13px;
+  border-radius: 6px;
+  padding: 8px 0px;
+  border-color: transparent;
+  box-shadow: var(--shadow-2);
+}
+
+.dcl.select-field .ui.dropdown.visible .menu.wrapper {
+  overflow-y: hidden;
+  height: auto;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.dcl.select-field .ui.dropdown .options-wrapper {
+  flex: 1;
+  width: 100% !important;
+}
+
+.dcl.select-field .ui.dropdown:hover .menu {
+  border-color: transparent;
+  box-shadow: var(--shadow-2);
+}
+
+.dcl.select-field .ui.dropdown .item {
+  border-top: none;
+}
+
+.dcl.select-field .ui.dropdown .menu > .message:not(.ui) {
+  color: var(--text);
+}
+
+.dcl.select-field .message {
+  margin-top: 8px;
+  color: var(--secondary-text);
+  font-size: 15px;
+}
+
+.dcl.select-field .ui.selection.active.dropdown {
+  box-shadow: none;
+}
+
+/* Error */
+
+.dcl.select-field.error .ui.selection.dropdown {
+  border-bottom: 2px solid var(--error);
+}
+
+.dcl.select-field.error .message {
+  color: var(--error);
+}
+
+.dcl.select-field.error .ui.header.sub {
+  color: var(--error);
+}
+
+.dcl.select-field.error .ui.selection.dropdown > i.icon {
+  opacity: 1;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cpath fill='%23ff0000' d='M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-2c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-16a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V7a1 1 0 0 1 1-1zm0 10a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 32px;
+  height: 36px;
+}
+
+.dcl.select-field.error .ui.selection.dropdown > i.icon:before {
+  /* content: '';
+  display: none; */
+  color: var(--error);
+}
+
+.dcl.select-field .ui.dropdown > .text {
+  text-transform: none;
+}

@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Color = void 0;
+var Color;
+(function (Color) {
+    Color["NEON_BLUE"] = "#00D3FF";
+    Color["SUMMER_RED"] = "#FF2D55";
+    Color["VOID"] = "#16141A";
+    Color["LUISXVI_VIOLET"] = "#A524B3";
+    Color["IDONTFEELTHATWELL"] = "#F3F2F5";
+    Color["SHADOWS"] = "#242129";
+    Color["NIGHT_TIME"] = "#691FA9";
+    Color["BLUISH_STEEL"] = "#676370";
+    Color["INNOCENCE"] = "#FFFFFF";
+    Color["CANDY_PURPLE"] = "#C640CD";
+    Color["SUNISH"] = "#FFBC5B";
+    Color["MILLENIAL_ORANGE"] = "#FC9965";
+    Color["OJ_NOT_SIMPSON"] = "#FF7439";
+    Color["DARK"] = "#18141A";
+})(Color = exports.Color || (exports.Color = {}));

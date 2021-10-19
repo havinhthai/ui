@@ -1,0 +1,61 @@
+.dcl.close,
+.ui.modal > .dcl.close {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--secondary-on-modal);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  transition: background-color 0.2s ease-in-out;
+  padding: 0px;
+}
+
+.dcl.close:hover {
+  background-color: var(--secondary-on-modal-hover);
+}
+
+.dcl.close .close-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M-5-5h24v24H-5z'/%3E%3Cpath fill='%23FFF' d='M13.706.363l-.069-.069a1 1 0 0 0-1.414 0L7 5.517 1.777.294a1 1 0 0 0-1.414 0L.294.363a1 1 0 0 0 0 1.414L5.517 7 .294 12.223a1 1 0 0 0 0 1.414l.069.069a1 1 0 0 0 1.414 0L7 8.483l5.223 5.223a1 1 0 0 0 1.414 0l.069-.069a1 1 0 0 0 0-1.414L8.483 7l5.223-5.223a1 1 0 0 0 0-1.414z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
+}
+
+.dcl.close.small {
+  width: 16px;
+  height: 16px;
+}
+
+.dcl.close.small .close-icon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg fill='none' fill-rule='evenodd' transform='matrix%280 1 1 0 -4 -4%29'%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Ccircle cx='12' cy='12' r='8' fill='%23FFF' fill-rule='nonzero' opacity='.12'/%3E%3Cpath fill='%23FFF' fill-rule='nonzero' d='M15.187 8.853l-.039-.04a.571.571 0 0 0-.808 0l-2.339 2.34L9.66 8.81a.571.571 0 0 0-.808 0l-.04.04a.571.571 0 0 0 0 .808L11.155 12l-2.341 2.341a.571.571 0 0 0 0 .808l.039.04a.571.571 0 0 0 .808 0L12 12.847l2.34 2.34a.571.571 0 0 0 .807 0l.04-.04a.571.571 0 0 0 0-.808L12.847 12l2.34-2.339a.571.571 0 0 0 0-.808z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: var(--brightness);
+          filter: var(--brightness);
+}
+
+.ui.modal .dcl.close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.ui.modal > :first-child:not(.icon).dcl.close {
+  /* Override semantic's crazy class which adds a border radius */
+  border-radius: 100%;
+}
+
+.ui.popup .dcl.close {
+  margin-left: 12px;
+}
