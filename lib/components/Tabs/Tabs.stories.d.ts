@@ -1,1 +1,0 @@
-import './Tabs.stories.css';

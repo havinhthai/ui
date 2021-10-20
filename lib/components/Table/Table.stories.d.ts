@@ -1,1 +1,0 @@
-import './Table.stories.css';

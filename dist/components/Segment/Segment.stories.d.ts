@@ -1,1 +1,0 @@
-import './Segment.stories.css';
