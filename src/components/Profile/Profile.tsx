@@ -39,7 +39,7 @@ export class Profile extends React.PureComponent<ProfileProps> {
     if (isDecentraland) {
       return (
         <span
-          className={`Profile decentraland ${size} ${inline ? 'inline' : ''}`}
+          className={`Profile LifeOnMars ${size} ${inline ? 'inline' : ''}`}
           title={address}
         >
           <Logo />
