@@ -18,16 +18,12 @@ export class Mana extends React.Component<ManaProps & HeaderProps> {
   }
 
   render(): JSX.Element {
-    const { size, className, inline, children, network, ...rest } = this.props
+    const { size, className, inline, children, ...rest } = this.props
     const classes = `dcl mana ${inline ? 'inline ' : ''}${className}`.trim()
     return (
       <Header size={size} className={classes} {...rest}>
         <i className="symbol">
-          {network !== Network.ETHEREUM ? (
-            <i className={network.toLowerCase()} />
-          ) : (
-            '⏣'
-          )}
+          <i className="marc" />
         </i>
         {children}
       </Header>

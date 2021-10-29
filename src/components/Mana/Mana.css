@@ -20,9 +20,9 @@
   font-size: 1em;
 }
 
-.dcl.mana .matic {
-  width: 1em;
-  height: 1em;
+.dcl.mana .marc {
+  width: 1.2em!important;
+  height: 1.1em!important;
   background-image: url(../../assets/lom-l2.svg);
   display: inline-block;
   background-size: contain;
