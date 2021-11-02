@@ -21,11 +21,11 @@
 }
 
 .dcl.mana .marc {
-  width: 1.2em!important;
-  height: 1.1em!important;
-  background-image: url(../../assets/lom-l2.svg);
-  display: inline-block;
-  background-size: contain;
-  filter: var(--brightness);
-  transform: translateY(0.2em);
+  width: 1.2em !important;
+  height: 0.9623em !important;
+  background-image: url(../../assets/lom-l2.svg) !important;
+  display: inline-block !important;
+  background-size: 100% 100% !important;
+  filter: var(--primary) !important;
+  transform: translateY(0.2em) !important;
 }
