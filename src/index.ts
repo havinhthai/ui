@@ -70,6 +70,7 @@ export * from './components/SelectField/SelectField'
 export * from './components/TextFilter'
 export * from './components/Responsive'
 export * from './components/Media'
+export * from './components/WearablePreview/WearablePreview'
 
 // Semantic components
 /* eslint-disable no-restricted-imports */
