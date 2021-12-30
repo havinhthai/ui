@@ -131,7 +131,7 @@ export class UserMenu extends React.Component<UserMenuProps, UserMenuState> {
                     network={network as Network}
                     size="small"
                     className={onClickBalance ? 'clickable' : undefined}
-                    title={`${manaBalances[network].toLocaleString()} MARC`}
+                    title={`${manaBalances[network].toLocaleString()} LOM`}
                     href="https://lifeonmars.org"
                   >
                     {Math.floor(manaBalances[network]).toLocaleString()}

@@ -182,7 +182,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
             onClick={onClickAccount}
           >
             {mana != null ? (
-              <Mana size="small" title={`${mana.toLocaleString()} MARC`}>
+              <Mana size="small" title={`${mana.toLocaleString()} LOM`}>
                 {Math.floor(mana).toLocaleString()}
               </Mana>
             ) : null}
